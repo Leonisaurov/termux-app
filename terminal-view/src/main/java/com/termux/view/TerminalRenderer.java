@@ -290,14 +290,6 @@ public final class TerminalRenderer {
             mTextPaint.setStrikeThruText(strikeThrough);
             mTextPaint.setColor(foreColor);
 
-<<<<<<< HEAD
-            // The text alignment is the default Paint.Align.LEFT.
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                canvas.drawTextRun(text, startCharIndex, runWidthChars, startCharIndex, runWidthChars, left, y - mFontLineSpacingAndAscent, false, mTextPaint);
-            } else {
-                canvas.drawText(text, startCharIndex, runWidthChars, left, y - mFontLineSpacingAndAscent, mTextPaint);
-            }
-=======
             canvas.drawTextRun(
                 text,
                 startCharIndex,
@@ -309,7 +301,6 @@ public final class TerminalRenderer {
                 false,
                 mTextPaint
             );
->>>>>>> fontTypes
         }
 
         if (savedMatrix) canvas.restore();
